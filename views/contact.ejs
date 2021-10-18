@@ -1,0 +1,59 @@
+
+<%- include partials/header.ejs %>
+
+<%- include partials/nav_bar.ejs %>
+
+<!-- Content -->
+  <body>  
+<main class="container">
+  <div>
+    <h1 class="4isplay-4">Welcome to the <%= title %> page</h1>
+    <br>
+    <div class="card" style="width: 18rem; margin: auto;">
+        <img class="card-img-top" src="/images/my_photo.png">
+        <div class="card-body">
+            <h5 class="card-title">Guillermo Arturo Daniel Garcia Romero</h5>
+            <b class="card-title">Email:</b>
+            <p class="card-body">monfermon@hotmail.com</p>
+            <b class="card-title">Phone number:</b>
+            <p class="card-body">805 717 0971</p>
+          </div>
+        </div>
+    </div>
+
+    <h3>Send me a message</h3>
+    <br>
+    
+    <form action="/">
+        <div class="form-group">
+          <label>First Name</label>
+          <input type="text" class="form-control" placeholder="First Name">
+        </div>
+        <br>
+        <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" class="form-control" placeholder="Last Name">
+        </div>
+        <br>
+        <div class="form-group">
+            <label>Contact Number</label>
+            <input type="tel" class="form-control" placeholder="Contact Number">
+          </div>
+          <br>
+        <div class="form-group">
+            <label>Email address</label>
+            <input type="email" class="form-control" placeholder="Enter email">
+          </div>
+          <br>
+        <div class="form-group">
+            <label>Message</label>
+            <textarea class="form-control" rows="3"></textarea>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+  </div>
+</main>
+  </body>
+
+<%- include partials/footer.ejs %>
